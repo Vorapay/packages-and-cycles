@@ -1,9 +1,10 @@
 package ru.netology.services.javaqa.javaqamvn.serices;
 
 public class monthVacation {
-    public int calcMonthVacation(int money, int income, int threshold, int expense) {
+    public int calcMonthVacation(int income, int threshold, int expense) {
 
         int summaryMonthVacation = 0;
+        int money = 0;
 
         for (int month = 1; month <= 12; month++) {
 
