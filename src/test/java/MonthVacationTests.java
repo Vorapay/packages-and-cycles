@@ -1,14 +1,13 @@
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import ru.netology.services.javaqa.javaqamvn.serices.monthVacation;
+import ru.netology.services.javaqa.javaqamvn.serices.MonthVacation;
 
-public class monthVacationTests {
+public class MonthVacationTests {
     @ParameterizedTest
     @CsvSource({"3, 10000, 20000, 3000", "2, 100000, 150000, 60000"})
     public void howManyMonths1(int expected, int income, int threshold, int expense) {
-        monthVacation service = new monthVacation();
+        MonthVacation service = new MonthVacation();
 
         //int expected = 3;
         int actual = service.calcMonthVacation(income, threshold, expense);

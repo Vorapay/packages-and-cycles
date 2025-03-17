@@ -1,6 +1,6 @@
 package ru.netology.services.javaqa.javaqamvn.serices;
 
-public class monthVacation {
+public class MonthVacation {
     public int calcMonthVacation(int income, int threshold, int expense) {
 
         int summaryMonthVacation = 0;

@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        monthVacation service = new monthVacation();
+        MonthVacation service = new MonthVacation();
 
         System.out.println("Отпуск в году составил = " + service.calcMonthVacation(100_000, 150_000, 60_000) + " месяца/ев");
 
